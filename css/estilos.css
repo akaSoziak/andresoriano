@@ -9,7 +9,7 @@
 }
 body {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #292929;
 }
 a {
@@ -21,8 +21,13 @@ a {
 a:hover {
   color: rgba(41, 41, 41, 0.5);
 }
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 .titulo-seccion h2 {
-  font-family: 'Mate SC', serif;
+  font-family: "Mate SC", serif;
   font-size: 3.125rem;
   font-weight: 400;
   line-height: 3.6875rem;
@@ -59,7 +64,7 @@ header .menu-pc .logo img {
   max-height: 4.6875rem;
 }
 header .menu-pc .menu-principal a {
-  font-family: 'Mate SC', serif;
+  font-family: "Mate SC", serif;
   font-size: 1.25rem;
   padding: 0 1.25rem;
 }
@@ -92,6 +97,7 @@ header .menu-pc .social-media a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #141618;
 }
 .main .fotografia .titulo-seccion {
   background-color: #141618;
@@ -102,30 +108,33 @@ header .menu-pc .social-media a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  border-bottom: 4px solid #214f63;
 }
 .main .fotografia .col {
-  width: 50%;
+  width: 49%;
   background-color: #141618;
   color: #eaeaea;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .main .fotografia .col .foto {
   background-size: cover;
   background-position: center;
-  width: 70%;
+  width: 100%;
+  height: 25rem;
 }
-.main .fotografia .col .foto.izq {
-  background-image: url('../img/deporte.jpg');
-  background-position: right;
+.main .fotografia .col .foto.izq-1 {
+  background-image: url("../img/naturaleza.jpg");
+  background-position: center;
 }
-.main .fotografia .col .foto.der {
-  background-image: url('../img/retrato.jpg');
-  background-position: left;
+.main .fotografia .col .foto.izq-2 {
+  background-image: url("../img/deporte.jpg");
+  background-position: center;
+}
+.main .fotografia .col .foto.der-1 {
+  background-image: url("../img/retrato.jpg");
+  background-position: center;
+}
+.main .fotografia .col .foto.der-2 {
+  background-image: url("../img/nocturna.jpg");
+  background-position: center;
 }
 .main .fotografia .col .foto .overlay {
   opacity: 0;
@@ -149,60 +158,137 @@ header .menu-pc .social-media a {
   font-size: 1.5625rem;
 }
 .main .fotografia .col .texto {
-  width: 30%;
-  padding: 3.375rem;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main .fotografia .col .texto h2 {
   font-size: 1.8125rem;
   font-weight: 400;
   line-height: 2.6875rem;
-  margin-bottom: 1.125rem;
 }
 .main .fotografia .col .texto p {
   line-height: 1.75rem;
 }
-.main .fotografia .col .texto-horizontal {
+.main .fotografia .col .hueco-izq {
+  background-color: #292929;
+  width: 110%;
+  height: 2px;
+}
+.main .fotografia .col .hueco-der {
+  background-color: #292929;
   width: 100%;
-  text-align: center;
+  height: 2px;
 }
-.main .fotografia .col .texto-horizontal h2 {
-  font-size: 1.8125rem;
-  font-weight: 400;
-  line-height: 2.6875rem;
+.main .dron {
+  padding: 5.625rem 0;
 }
-.main .fotografia .col .texto-horizontal p {
-  line-height: 1.75rem;
+.main .dron .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  margin: 0 auto;
 }
-.main .fotografia .col .foto-full {
-  width: 100%;
-  min-height: 25.25rem;
+.main .dron .container .col {
+  width: 50%;
+}
+.main .dron .container .col.izq {
+  width: 50%;
+  -webkit-box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.main .dron .container .col .titulo-seccion {
+  padding: 4.125rem;
+  padding-right: 0;
+}
+.main .dron .container .col .titulo-seccion h2 {
+  margin-bottom: 1.125rem;
+}
+.main .dron .container .col .titulo-seccion p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.main .dron .container .slider {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .dron .container .slider .slide {
+  width: 50%;
+  min-height: 380px;
   background-size: cover;
   background-position: center;
 }
-.main .fotografia .col .foto-full.izq {
-  background-image: url('../img/naturaleza.jpg');
+.main .dron .container .slider .slide.video1 {
+  background-image: url('../img/granada0.jpg');
 }
-.main .fotografia .col .foto-full.der {
-  background-image: url('../img/nocturna.jpg');
+.main .dron .container .slider .slide.foto2 {
+  background-image: url('../img/granada2.jpg');
 }
-.main .fotografia .col .foto-full .overlay {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 22, 24, 0.4);
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.main .dron .container .slider .slide.foto3 {
+  background-image: url('../img/granada3.jpg');
 }
-.main .fotografia .col .foto-full .overlay:hover {
-  opacity: 1;
+.main .sobre-as {
+  padding: 5.625rem 0;
+  background-color: #141618;
 }
-.main .fotografia .col .foto-full .overlay i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 1.5625rem;
+.main .sobre-as .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  margin: 0 auto;
+}
+.main .sobre-as .container .col.izq {
+  width: 30%;
+  border-right: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5%;
+}
+.main .sobre-as .container .col.der {
+  width: 70%;
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .sobre-as .container .col.der .texto p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #eaeaea;
+  margin-bottom: 1.125rem;
 }
