@@ -1,192 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/47f208f055.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/47f208f055.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Andrés Soriano</title>
-</head>
+  </head>
 
-
-
-<body>
-
+  <body>
     <header>
+      <div class="menu-pc">
+        <a href="#" class="logo">
+          <img src="img/logo2.png" alt="" />
+        </a>
+        <nav class="menu-principal">
+          <a href="">Inicio</a>
+          <a href="">Fotografía</a>
+          <a href="">Dron</a>
+          <a href="">Sobre AS</a>
+          <a href="">Contacto</a>
+        </nav>
 
-        <div class="menu-pc">
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/andr%C3%A9s-soriano/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
 
-            <a href="#" class="logo">
-                <img src="img/logo2.png" alt="">
-            </a>
-            <nav class="menu-principal">
-                <a href="">Inicio</a>
-                <a href="">Fotografía</a>
-                <a href="">Dron</a>
-                <a href="">Sobre AS</a>
-                <a href="">Contacto</a>
-            </nav>
-       
-            <div class="social-media">
+          <a href="https://www.instagram.com/asorianod/">
+            <i class="fab fa-instagram"></i>
+          </a>
 
-                <a href="https://www.linkedin.com/in/andr%C3%A9s-soriano/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-        
-                <a href="https://www.instagram.com/asorianod/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-        
-                <a href="https://github.com/akaSoziak">
-                    <i class="fab fa-github"></i>
-                </a>
-        
-                <a href="https://twitter.com/Sorianelas">
-                    <i class="fab fa-twitter"></i>
-                </a>
-    
+          <a href="https://github.com/akaSoziak">
+            <i class="fab fa-github"></i>
+          </a>
 
-            </div>
+          <a href="https://twitter.com/Sorianelas">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
-
-       
-
-
+      </div>
     </header>
 
     <section class="main">
+      <section class="inicio" id="inicio">
+        <img src="img/inicio.jpg" alt="nazareno" />
+        <div class="cita">
+          <p>'En la vida se puede ser de todo menos pesado',</p>
+          <br />
+          <p><i>Andrés Soriano</i></p>
+        </div>
+      </section>
 
-        <section class="inicio" id="inicio">
-            <img src="img/inicio.jpg" alt="nazareno">
-            <div class="cita">
-                <p>'En la vida se puede ser de todo menos pesado',</p><br><p><i>Andrés Soriano</i></p>
+      <section class="fotografia" id="fotografia">
+        <div class="titulo-seccion">
+          <h2>Fotografía</h2>
+        </div>
+        <div class="col">
+          <div class="foto izq-1 lightbox">
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
             </div>
-            
-        </section>
+          </div>
+          <div class="texto">
+            <h2>Naturaleza</h2>
+          </div>
+          <div class="hueco-izq"></div>
+          <div class="texto">
+            <h2>Deporte</h2>
+          </div>
 
-        <section class="fotografia" id="fotografia">
+          <div class="foto izq-2 lightbox">
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="foto der-1 lightbox">
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+
+          <div class="texto">
+            <h2>Retrato</h2>
+          </div>
+          <div class="hueco-der"></div>
+          <div class="texto">
+            <h2>Nocturna</h2>
+          </div>
+
+          <div class="foto der-2 lightbox">
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dron" id="dron">
+        <div class="container">
+          <div class="col izq">
+            <div class="slider" id="slider">
+              <div class="slide video1">
+                <video
+                  src="/img/dron.mp4"
+                  width="540"
+                  height="480"
+                  controls
+                ></video>
+              </div>
+              <div class="slide foto2"></div>
+              <div class="slide foto3"></div>
+            </div>
+          </div>
+
+          <div class="col der">
             <div class="titulo-seccion">
-                <h2>Fotografía</h2>
+              <h2>Dron</h2>
+              <p>
+                Fotografía aérea y grabación de video en 4k a 30fps, con el dron
+                DJI Mini 2. Ligereza y velocidades considerables para obtener
+                las mejores tomas aéreas.
+              </p>
             </div>
-            <div class="col">
-                <div class="foto izq-1 lightbox">
-                    <div class="overlay">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                </div>
-                <div class="texto">
-                    <h2>Naturaleza</h2>
-                </div>
-                    <div class="hueco-izq"></div>
-                <div class="texto">
-                    <h2>Deporte</h2>
-                    
-                </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="foto izq-2 lightbox">
-                    <div class="overlay">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                </div>
-            </div>    
-
-            <div class="col">
-
-                <div class="foto der-1 lightbox">
-                    <div class="overlay">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                </div>
-
-                <div class="texto">
-                    <h2>Retrato</h2>
-                </div>
-                <div class="hueco-der"></div>
-                <div class="texto">
-                    <h2>Nocturna</h2>
-                    
-                </div>
-
-                <div class="foto der-2 lightbox">
-                    <div class="overlay">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                </div>
-
-                
+      <section class="sobre-as" id="sobre-as">
+        <div class="container">
+          <div class="col izq">
+            <div class="titulo-seccion">
+              <p>Fotografo profesional</p>
+              <h2>Sobre mí</h2>
             </div>
+          </div>
 
-
-
-
-
-        </section>
-
-        <section class="dron" id="dron">
-            <div class="container">
-                <div class="col izq">
-                    <div class="slider" id="slider">
-                        <div class="slide video1"><video src="/img/dron.mp4" width="540" height="480" controls></video></div>
-                        <div class="slide foto2"></div>
-                        <div class="slide foto3"></div>
-                        
-                
-                    
-                    </div>
-
-                </div>
-
-                <div class="col der">
-                    <div class="titulo-seccion">
-                        <h2>Dron</h2>
-                        <p>Fotografía aérea y grabación de video en 4k a 30fps, con el dron DJI Mini 2. Ligereza y velocidades considerables para obtener las mejores tomas aéreas.</p>
-                    </div>
-
-                </div>
-                
-
+          <div class="col der">
+            <div class="texto">
+              <p>
+                Desde los 8 años, desarrollé una pasión por la fotografía
+                gracias a mi abuelo, él también fue fotógrafo, y es a esta misma
+                edad que tengo la oportunidad de tomar las primeras fotografías.
+                Por tanto, fue bastante natural que decidiera hacer de la
+                fotografía mi primera pasión y mi profesión.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+          <div class="datos">
+              <div class="contenedor">
+                <h3>Contacto</h3>
+                <p>asorianod@gmail.com</p>
+                <p>Dresden</p>
+              </div>
             
-        </section>
+          </div>
 
-        <section class="sobre-as" id="sobre-as">
-            <div class="container">
-                <div class="col izq">
-                    <div class="titulo-seccion">
-                        <p>Fotografo profesional</p>
-                        <h2>Sobre mí</h2>
-                        
-
-                    </div>
-                    
+          <div class="formulario">
+            <form action="" class="formulario_contacto" name="formulario_contacto">
+                <div class="input-group">
+                    <input type="text" id="nombre" name="nombre">
+                    <label class="label" for="nombre">Nombre</label>
                 </div>
 
-                <div class="col der">
-                    <div class="texto">
-                        <p>Desde los 8 años, desarrollé una pasión por la fotografía gracias a mi abuelo, él también fue fotógrafo, y es a esta misma edad que tengo la oportunidad de tomar las primeras fotografías. Por tanto, fue bastante natural que decidiera hacer de la fotografía mi primera pasión y mi profesión.
-                        </p>   
-                    </div>
-                </div>           
-            </div>
-        </section>
+                <div class="input-group">
+                    <input type="email" id="email" name="email">
+                    <label class="label" for="email">Correo Electrónico</label>
+                </div>
 
-        <section class="contacto" id="contacto">
+                <div class="input-group">
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <label class="label" for="mensaje">Mensaje</label>
+                </div>
 
-           Contacto
-        </section>
+                <input type="submit" value="Enviar">
+
+            </form>
+
+          </div>
 
 
+          
+      </section>
 
     </section>
-    
 
+    <footer>
+        <p class="copyright">Todos los derechos reservados</p>
+        <div class="social-media-bottom">
+            <a href="https://www.linkedin.com/in/andr%C3%A9s-soriano/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+  
+            <a href="https://www.instagram.com/asorianod/">
+              <i class="fab fa-instagram"></i>
+            </a>
+  
+            <a href="https://github.com/akaSoziak">
+              <i class="fab fa-github"></i>
+            </a>
+  
+            <a href="https://twitter.com/Sorianelas">
+              <i class="fab fa-twitter"></i>
+            </a>
 
-</body>
+        </div>
+
+    </footer>
+   
+  </body>
 </html>

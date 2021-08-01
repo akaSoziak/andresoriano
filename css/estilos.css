@@ -237,13 +237,13 @@ header .menu-pc .social-media a {
   background-position: center;
 }
 .main .dron .container .slider .slide.video1 {
-  background-image: url('../img/granada0.jpg');
+  background-image: url("../img/granada0.jpg");
 }
 .main .dron .container .slider .slide.foto2 {
-  background-image: url('../img/granada2.jpg');
+  background-image: url("../img/granada2.jpg");
 }
 .main .dron .container .slider .slide.foto3 {
-  background-image: url('../img/granada3.jpg');
+  background-image: url("../img/granada3.jpg");
 }
 .main .sobre-as {
   padding: 5.625rem 0;
@@ -291,4 +291,130 @@ header .menu-pc .social-media a {
   line-height: 1.75;
   color: #eaeaea;
   margin-bottom: 1.125rem;
+}
+.main .contacto .datos {
+  padding: 5.625rem 0 11.875rem 0;
+  position: relative;
+  background-image: url(../img/granada.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main .contacto .datos .contenedor {
+  width: 25%;
+  background: #fff;
+  border: 6px double #eaeaea;
+  padding: 2.25rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .contacto .datos .contenedor h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6875rem;
+  margin-bottom: 1.125rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.main .contacto .datos .contenedor p {
+  font-size: 1rem;
+  color: #292929;
+}
+.main .contacto .formulario {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 40.625rem;
+  margin: 0 auto;
+  padding: 2.25rem;
+  margin-top: -6.25rem;
+  width: 90%;
+}
+.main .contacto .formulario .formulario_contacto .input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.main .contacto .formulario .formulario_contacto .input-group input[type="text"],
+.main .contacto .formulario .formulario_contacto .input-group input[type="email"],
+.main .contacto .formulario .formulario_contacto .input-group textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #292929;
+  width: 100%;
+  outline: none;
+  padding: 0.975rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(33, 79, 99, 0.5);
+  vertical-align: top;
+}
+.main .contacto .formulario .formulario_contacto .input-group input[type="text"]:focus,
+.main .contacto .formulario .formulario_contacto .input-group input[type="email"]:focus,
+.main .contacto .formulario .formulario_contacto .input-group textarea:focus {
+  border-bottom: 2px solid #214f63;
+}
+.main .contacto .formulario .formulario_contacto .input-group textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+.main .contacto .formulario .formulario_contacto .input-group label {
+  color: #214f63;
+}
+.main .contacto .formulario .formulario_contacto .input-group label.label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .contacto .formulario .formulario_contacto .input-group label.label.active {
+  top: -0.75rem;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  margin-left: 0;
+}
+.main .contacto .formulario .formulario_contacto .input-group .error {
+  position: absolute;
+  color: #ff3b3b;
+  font-size: 0.875rem;
+}
+.main .contacto .formulario .formulario_contacto input[type="submit"] {
+  background: #214f63;
+  color: #fff;
+  border-radius: 1px;
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .contacto .formulario .formulario_contacto input[type="submit"]:hover {
+  background: #14303d;
+}
+footer {
+  margin-top: 2.25rem;
+  background: #292929;
+  padding: 5.625rem 0;
+  text-align: center;
+  color: #fff;
+}
+footer .social-media-bottom {
+  margin-top: 2.25rem;
+}
+footer .social-media-bottom a {
+  padding: 0 0.5625rem;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+footer .social-media-bottom a:hover {
+  color: #398db1;
 }

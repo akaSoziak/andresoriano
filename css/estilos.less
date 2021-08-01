@@ -27,7 +27,6 @@ body {
   color: @gris;
 }
 
-
 a {
   text-decoration: none;
   color: @gris;
@@ -41,9 +40,9 @@ a {
 }
 
 .container {
-    width: 90%;
-    max-width: 1080px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .titulo-seccion {
@@ -211,55 +210,53 @@ header {
   .dron {
     padding: 5.625rem 0;
 
-    .container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: justify;
-        margin: 0 auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: justify;
+      margin: 0 auto;
 
-        .col{
-            width: 50%;
+      .col {
+        width: 50%;
 
-            &.izq{
-                width: 50%;
-                box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
-                overflow: hidden;
-            }
-            .titulo-seccion{
-                padding: 4.125rem;
-                padding-right: 0;
-                h2{
-                    margin-bottom: 1.125rem;
-                }
-                p{
-                    font-size: 1.125rem;
-                    line-height: 1.75;
-                }
-            }
-
-        }   .slider{
-                width: 300%;
-                display: flex;
-                .slide{
-                    width: 50%;
-                    min-height: 380px;
-                    background-size: cover;
-                    background-position: center;
-                    &.video1{
-                        background-image: url('../img/granada0.jpg');
-                    }
-                    &.foto2{
-                        background-image: url('../img/granada2.jpg');
-                    }
-                    &.foto3{
-                        background-image: url('../img/granada3.jpg');
-                    }
-
-                }
-            
+        &.izq {
+          width: 50%;
+          box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
         }
+        .titulo-seccion {
+          padding: 4.125rem;
+          padding-right: 0;
+          h2 {
+            margin-bottom: 1.125rem;
+          }
+          p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+          }
+        }
+      }
+      .slider {
+        width: 300%;
+        display: flex;
+        .slide {
+          width: 50%;
+          min-height: 380px;
+          background-size: cover;
+          background-position: center;
+          &.video1 {
+            background-image: url("../img/granada0.jpg");
+          }
+          &.foto2 {
+            background-image: url("../img/granada2.jpg");
+          }
+          &.foto3 {
+            background-image: url("../img/granada3.jpg");
+          }
+        }
+      }
     }
   }
 
@@ -268,12 +265,12 @@ header {
     background-color: @negro;
 
     .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        color: @blanco;
-        justify-content: justify;
-        margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      color: @blanco;
+      justify-content: justify;
+      margin: 0 auto;
 
       .col.izq {
         width: 30%;
@@ -289,16 +286,161 @@ header {
         display: flex;
         align-items: center;
 
-        .texto{
-            p{
-                font-size: 1.125rem;
-                line-height: 1.75;
-                color: @gris-claro;
-                margin-bottom: 1.125rem;
-            }
-           
+        .texto {
+          p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: @gris-claro;
+            margin-bottom: 1.125rem;
+          }
         }
       }
     }
   }
+  .contacto {
+    .datos {
+      padding: 5.625rem 0 11.875rem 0;
+      position: relative;
+      background-image: url(../img/granada.jpg);
+      background-size: cover;
+      background-position: center;
+
+      .contenedor {
+        width: 25%;
+        background: @blanco;
+        border: 6px double @gris-claro;
+        padding: 2.25rem;
+        text-align: center;
+        margin: 0 auto;
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.6875rem;
+          margin-bottom: 1.125rem;
+          border-bottom: 1px solid @gris-claro;
+        }
+        p {
+          font-size: 1rem;
+          color: @gris;
+        }
+      }
+    }
+
+    .formulario {
+      position: relative;
+      z-index: 3;
+      background: @blanco;
+      max-width: 40.625rem;
+      margin: 0 auto;
+      padding: 2.25rem;
+      margin-top: -6.25rem;
+      width: 90%;
+
+      .formulario_contacto {
+        .input-group {
+          position: relative;
+          margin-bottom: 2rem;
+
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            font-family: @fuente-principal;
+            font-size: 1rem;
+            color: @gris;
+            width: 100%;
+            outline: none;
+            padding: 0.975rem 0;
+            background: none;
+            border: none;
+            border-bottom: 2px solid fade(@azul-deep, 50%);
+            vertical-align: top;
+
+            &:focus {
+              border-bottom: 2px solid @azul-deep;
+            }
+          }
+          textarea {
+            max-width: 100%;
+            max-height: 10.25rem;
+            min-height: 5.125rem;
+            min-width: 100%;
+          }
+          label {
+            color: @azul-deep;
+
+            &.label {
+              position: absolute;
+              top: 1rem;
+              left: 0;
+              font-size: 1rem;
+              line-height: 1rem;
+              margin-left: 1rem;
+              -webkit-transition: all 0.3s ease;
+              -o-transition: all 0.3s ease;
+              transition: all 0.3s ease;
+
+              &.active {
+                top: -0.75rem;
+                font-size: 0.75rem;
+                line-height: 0.75rem;
+                margin-left: 0;
+              }
+            }
+          }
+
+          .error {
+            position: absolute;
+            color: rgb(255, 59, 59);
+            font-size: 0.875rem;
+          }
+        }
+
+        input[type="submit"] {
+          background: @azul-deep;
+          color: @blanco;
+          border-radius: 1px;
+          border: 2px solid @gris-claro;
+          cursor: pointer;
+          display: block;
+          margin: 0 auto;
+          margin-top: 3.125rem;
+          padding: 0.9375rem;
+          width: 20%;
+          outline: none;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: darken(@azul-deep, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  margin-top: 2.25rem;
+  background: @gris;
+  padding: 5.625rem 0;
+  text-align: center;
+  color: @blanco;
+
+  .social-media-bottom{
+    margin-top: 2.25rem;
+    
+    a{
+      padding: 0 0.5625rem;
+      color: @blanco;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:hover{
+        color: @azul-soft;
+      }
+    }
+  }
+
 }
